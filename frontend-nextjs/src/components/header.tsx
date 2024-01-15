@@ -16,6 +16,9 @@ export default function Header() {
         <li>
           <Link href="/webcam/">Webcam</Link>
         </li>
+        <li>
+          <Link href="/debug/">Debug</Link>
+        </li>
       </ul>
     </header>
   );
