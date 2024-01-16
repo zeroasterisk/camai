@@ -4,5 +4,14 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
     "source.organizeImports": "explicit"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "NikolaosGeorgiou.html-fmt-vscode"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   }
 }

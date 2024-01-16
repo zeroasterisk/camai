@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <title>Cam AI Python Backend API: Debug</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://use.fontawesome.com/7ceaa8d25d.js"></script>
+</head>
+
+<body>
+    <!-- Full-width fluid until the `md` breakpoint, then lock to container -->
+    <div class="md:container md:mx-auto">
+        <!-- card: intro -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+            <img class="w-full" src="/img/card-top.jpg" alt="Webcam Header">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">
+                    Cam AI Python API [draft]
+                    <div>
+                        <p class="text-gray-700 text-base">
+                            Python API backing Cam AI.
+                        </p>
+                        <p class="text-gray-700 text-base">
+                            This is the <u>debug</u> page (also a playground).
+                        </p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                            <a href="/static/index.html">
+                                <i class="fa fa-arrow-circle-left fa-lg" aria-hidden="true"></i>
+                                Index Page
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- card: websocket test -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+            <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">
+                    Websocket Test
+                    <div>
+                        <div class="text-gray-700 text-base">
+                            <form id="debugWebsocketForm" action="">
+                                <div class="relative">
+                                    <label for="Search" class="sr-only"> Search</label>
+                                    <input type="text" id="messageText"
+                                        class="w-full rounded-md border-gray-200 py-2.5 pe-10 shadow-sm sm:text-sm"
+                                        autocomplete="off" placeholder="echo to websocket..."
+                                        value="default message to websocket">
+                                    <span class="absolute inset-y-0 end-0 grid w-10 place-content-center">
+                                        <button type="button" class="text-gray-600 hover:text-gray-700">
+                                            <span class="sr-only">Send</span>
+                                            <button type="submit">
+                                                <i class="fa fa-arrow-circle-right fa-lg" aria-hidden="true"></i>
+                                            </button>
+                                        </button>
+                                    </span>
+                                </div>
+                            </form>
+                            <div class="end-0 z-10 mt-2 w-56 divide-y divide-gray-100 rounded-md border border-gray-100 bg-white shadow-lg"
+                                role="menu">
+                                <div class="p-2" id="messages"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card: webcam -->
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">
+                        Webcam Source
+                        <div>
+                            <p class="text-gray-700 text-base">
+                                <video height="480" width="640" id="videoInput">Oops, no video for you!</video>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card: webcam -->
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">
+                        Output Video Stream
+                        <div>
+                            <p class="text-gray-700 text-base">
+                                <video height="480" width="640" id="videoOutput">Oops, no video for you!</video>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/static/client.js"></script>
+        <script src="/static/client_debug_video.js"></script>
+</body>
+
+</html>
